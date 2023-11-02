@@ -248,6 +248,7 @@ value caml_interprete(code_t prog, asize_t prog_size)
     /* enter the JIT engine */
     return caml_jit_rt_start(prog, Val_int(0), Val_int(0), Atom(0), caml_extern_sp);
   }
+
 #endif
 
 #if defined(THREADED_CODE) && defined(ARCH_SIXTYFOUR) && !defined(ARCH_CODE32)
